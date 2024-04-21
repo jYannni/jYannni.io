@@ -46,10 +46,10 @@ export default async function ProjectsPage() {
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are complete and some are on the way.
-            <br />
+            {/* Some of the projects are complete and some are on the way.
+            <br /> */}
             These are NOT my projects - they belong to Chronark. I have yet to remove them as I am still working on the site. <br />
-            I am iusing them as placeholders for now. <br />
+            I am using them as placeholders for now. <br />
             Stay tuned.
           </p>
         </div>
