@@ -13,12 +13,12 @@ const navigation = [
 ];
 
 const firstSetOfWords = [
-  "websites", 1000,
-  "responsive applications", 1000,
-  "automation tools", 1000,
-  "databases", 1000,
-  "chatbots", 1000,
-  "machine learning models", 1000,
+  "design websites", 1000,
+  "build responsive applications", 1000,
+  "create automation tools", 1000,
+  "use databases", 1000,
+  "utilise and integrate chatbots", 1000,
+  "work with machine learning models", 1000,
 ];
 
 export default function Home() {
@@ -48,7 +48,7 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
             <div className="my-16 text-center animate-fade-in">
               <h2 className="text-md text-zinc-500 ">
-                I build{" "}
+                I{" "}
                 <TypeAnimation
                   sequence={firstSetOfWords}
                   repeat={Infinity}
