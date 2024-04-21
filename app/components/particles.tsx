@@ -13,9 +13,9 @@ interface ParticlesProps {
 
 export default function Particles({
 	className = "",
-	quantity = 30,
-	staticity = 50,
-	ease = 50,
+	quantity = 69,
+	staticity = 24,
+	ease = 10,
 	refresh = false,
 }: ParticlesProps) {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -57,9 +57,9 @@ export default function Particles({
 		if (canvasRef.current) {
 			const rect = canvasRef.current.getBoundingClientRect();
 			const { w, h } = canvasSize.current;
-			const x = mousePosition.x - rect.left - w / 2;
-			const y = mousePosition.y - rect.top - h / 2;
-			const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;
+			const x = mousePosition.x - rect.left - w / 2.1;
+			const y = mousePosition.y - rect.top - h / 2.1;
+			const inside = x < w / 1.8 && x > -w / 1.8 && y < h / 1.8 && y > -h / 1.8;
 			if (inside) {
 				mouse.current.x = x;
 				mouse.current.y = y;
