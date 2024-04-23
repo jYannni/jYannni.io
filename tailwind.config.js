@@ -31,6 +31,7 @@ module.exports = {
 			fontFamily: {
 				sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
 				display: ["var(--font-calsans)"],
+        'bladeRunner': ['__bladeRunner_42a9be', '__bladeRunner_Fallback_42a9be']
 			},
 			backgroundImage: {
 				"gradient-radial":
@@ -103,6 +104,8 @@ module.exports = {
 				},
 			},
 		},
+    variants: {},
+    plugins: []
 	},
 	plugins: [
 		require("@tailwindcss/typography"),

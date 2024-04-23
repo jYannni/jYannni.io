@@ -50,9 +50,9 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
-  variable: "--font-calsans",
+const bladeRunner = LocalFont({
+  src: "../public/fonts/BladeRunnerMovieFont-4nx9.ttf",
+  variable: "--font-blade-runner-movie-font",
 });
 
 export default function RootLayout({
@@ -61,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="en" className={[inter.variable, bladeRunner.variable].join(" ")}>
       <head>
         <Analytics />
       </head>
