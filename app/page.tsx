@@ -51,14 +51,14 @@ export default function Home() {
       />
       <div className="mb-16 text-center animate-fade-in">
       <h2 className="text-xs sm:text-sm md:text-md font-semibold text-zinc-500">
-        My name is Yanko,<br />
+        Hey there, I'm Yanko,<br />
         I am a{" "}
         <TypeAnimation
           sequence={firstSetOfWords}
           repeat={Infinity}
           speed={50}
           style={{ fontSize: '1em', fontWeight: '900' }}
-        /><br /> online I go by
+        />,<br /> online I go by
       </h2>
       </div>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
