@@ -47,7 +47,7 @@ export default async function BlogsPage() {
           </h2>
           <p className="mt-4 text-zinc-400">
             As and when I write, I will post it here. <br />
-            These blog posts will be looking forward into what I believe the future holds for us.<br />
+            These blog posts will be about my life, looking forward into what I believe the future holds for us.<br />
             From how AI and LLMs will affect us, to how we can use technology to make our lives better.
           </p>
           <p className="mt-4 text-zinc-400 flex justify-end">
