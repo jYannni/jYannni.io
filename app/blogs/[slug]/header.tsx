@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Eye, Github, Linkedin } from "lucide-react";
+import { ArrowLeft, Eye, Twitter, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -18,12 +18,12 @@ export const Header: React.FC<Props> = ({ blog, views }) => {
 	const [isIntersecting, setIntersecting] = useState(true);
 
 	const links: { label: string; href: string }[] = [];
-	// if (blog.repository) {
-	// 	links.push({
-	// 		label: "GitHub",
-	// 		href: `https://github.com/${blog.repository}`,
-	// 	});
-	// }
+	if (blog.repository) {
+		links.push({
+			label: "GitHub",
+			href: `https://github.com/${blog.repository}`,
+		});
+	}
 	if (blog.url) {
 		links.push({
 			label: "Website",
@@ -78,6 +78,15 @@ export const Header: React.FC<Props> = ({ blog, views }) => {
 						</Link>
 						<Link target="_blank" href="https://github.com/jYannni">
 							<Github
+								className={`w-6 h-6 duration-200 hover:font-medium ${
+									isIntersecting
+										? " text-zinc-400 hover:text-zinc-100"
+										: "text-zinc-600 hover:text-zinc-900"
+								} `}
+							/>
+						</Link>
+            <Link target="_blank" href="https://twitter.com/jYannni_io">
+							<Twitter
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
 										? " text-zinc-400 hover:text-zinc-100"

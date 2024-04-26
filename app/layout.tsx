@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "jyannni.io",
-    template: "%s | jyannni.io",
+    default: "jyannni-io.vercel.app",
+    template: "%s | jyannni-io.vercel.app",
   },
   description: "Full-Stack Developer of web sites and apps.",
   openGraph: {
-    title: "jyannni.io",
+    title: "jyannni-io",
     description:
       "Full-Stack Developer of web sites and apps.",
-    url: "https://jyannni.io",
-    siteName: "jyannni.io",
+    url: "https://jyannni-io.vercel.app",
+    siteName: "jyannni-io",
     images: [
       {
-        url: "https://jyannni.io/og.png",
+        url: "https://jyannni-io.vercel.app/og.png",
         width: 1920,
         height: 1080,
       },
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // twitter: {
-  //   title: "Yanko Thomson",
-  //   card: "summary_large_image",
-  // },
+  twitter: {
+    title: "jYannni_io",
+    card: "summary_large_image",
+  },
   icons: {
     shortcut: "/favicon.png",
   },
@@ -55,13 +55,18 @@ const bladeRunner = LocalFont({
   variable: "--font-blade-runner-movie-font",
 });
 
+const calSans = LocalFont({
+  src: "../public/fonts/CalSans-SemiBold.ttf",
+  variable: "--font-cal-sans-semi-bold",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, bladeRunner.variable].join(" ")}>
+    <html lang="en" className={[inter.variable, bladeRunner.variable, calSans.variable].join(" ")}>
       <head>
         <Analytics />
       </head>
